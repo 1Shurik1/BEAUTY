@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+input {
+    border: none;
+}
+
+body {
+    font-size: 14px;
+    color: black;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.header__top {
+    background: #EFEFEF;
+    width: 100%;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px 0;
+}
+
+.header__menu-iner {
+    margin-right: 30px;
+}
+
+.header__menu-iner:last-child{
+    margin-right: 0;
+}
+
+.header__mwnu-link {
+    position: relative;
+    text-decoration: none;
+    color: #333333;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.header__mwnu-link:hover {
+    color: #F13C6E;
+}
+.header__mwnu-link::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.header__mwnu-link:hover::after {
+    background: #F13C6E;
+}
+
+/* HEADER___MAIL */
+
+.header__main {
+    position: relative;
+    padding: 41px 0;
+}
+
+.header__social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.1em;
+    color: #F13C6E;
+    padding-left: 20px;
+}
+
+.header__input {
+    position: relative;
+    width: 250px;
+    height: 40px;
+    background: #EFEFEF;
+    border-radius: 40px;
+}
+
+.bac__search {
+    /* background-image: url(../img/search.svg) left no-repeat; */
+    padding-left: 20px;
+}
+
+.header__tell {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    padding-right: 40px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.header__tell:hover {
+    color: #F13C6E;
+}
+
+.header__btn {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    background: #FFFFFF;
+    border: 2px solid #F13C6E;
+    border-radius: 40px;
+    padding: 12px 26px;
+    cursor: pointer;
+}
+
+.main {
+    background: #EFEFEF;
+}
+
+/* SALE */
+
+.sections__sale {
+    padding: 217px 0;
+    background-image: url(../img/sale.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sale__title {
+    width: 308px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+}
+
+.sale__text {
+    width: 308px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding: 56px 0;
+}
+
+.sale__btn {
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    background: #F13C6E;
+    border: 2px solid #f9f9f9;
+    border-radius: 40px;
+    padding: 12px 26px;
+}
+
+
+/* GOODS */
+
+.goods__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin-top: 80px;
+    margin-bottom: 38px;
+}
+
+.goods__cards {
+    display: flex;
+    gap: 30px;
+}
+
+.goods__card {
+    background: #FFFFFF;
+    width: 256px;
+    height: 363px;
+}
+
+.goods__img {
+   padding: 25px 65px 0 65px;
+}
+
+.goods__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #333333;
+    padding: 20px 0;
+}
+
+.goods__price {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.goods__btn {
+    align-items: center;
+    background: #F13C6E;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    padding: 9px 40px;
+    border: #F13C6E;
+    cursor: pointer;
+    margin: 20px 63px 0 63px;
+}
+
+/* INFO */
+.info {
+    padding: 100px 0;
+}
+
+.sections__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 540px;
+    height: 212px;
+    padding: 40px;
+    background: #F13C6E;
+}
+
+.subscribe__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding: 35px 0 25px 0;
+}
+
+.subscribe__text {
+    width: 231px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding-bottom: 25px;
+}
+
+.subscribe__input {
+    padding: 9px 0 9px 0;
+    background: #FFFFFF;
+    border: #F13C6E;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #C4C4C4;
+    margin-bottom: 35px;
+}
+
+
+
+.our__shops {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 540px;
+    height: 212px;
+    padding: 40px;
+    background: #F13C6E;
+}
+
+.our__shops-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.our__shops-text {
+    width: 141px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding: 25px 0;
+}
+
+.our__shops-btn {
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    background: #F13C6E;
+    border: 2px solid #f9f9f9;
+    border-radius: 40px;
+    padding: 12px 26px;
+}
+
+
+/* BRANDS */
+
+.brands {
+    background: #FFFFFF;
+}
+
+.brands__grup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 60px;
+    
+}
+
+/* FOOTER */
+.footer__top {
+    padding: 100px 0;
+}
+
+.footer {
+    background: #FFFFFF;
+}
